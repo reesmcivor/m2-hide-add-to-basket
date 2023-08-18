@@ -24,7 +24,7 @@ class AddBodyClassObserver implements ObserverInterface
         if ($product) {
             $hideAddToCart = $product->getCustomAttribute('hide_addtocart');
             if ($hideAddToCart && $hideAddToCart->getValue() == '1') {
-                $this->pageConfig->addBodyClass('hide-add-to-cart');
+                $this->pageConfig->addBodyClass('hide-add-to-basket');
             }
 
             $hidePrice = $product->getCustomAttribute('hide_price');
